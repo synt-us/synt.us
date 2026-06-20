@@ -1,0 +1,51 @@
+PXL Syntax
+----------
+
+PXL has a C and Python hybrid syntax. A list of differences can be found at the
+end of this text file.
+
+Statements
+----------
+
+Statements unlike in C don't end with semicolons, but instead end with
+newlines.
+
+Loops
+-----
+
+There are three types of loops in PXL; while, for and iter.
+
+Functions
+---------
+
+Functions are similar in C, except that the return type is dynamically
+typed. An example set of functions would be:
+
+	err(s) {
+		print(s, stderr)
+	}
+
+	pow(i, n) {
+		j = 0
+		iter (k to n)
+			j *= i
+		return j
+	}
+
+Arguments
+---------
+
+Arguments can be optional, as such in Python.
+
+Multiple arguments can be used as one argument, for example `*(n)(i)` will 
+repeat i n times throughout the function call.
+
+Differences
+-----------
+
+Syntax			C		Python		PXL
+statement terminator    ;		newline		newline
+has if parenthesis	yes		no		yes
+strictly typed		yes		no		no
+
+*** COMPLETE THIS ***

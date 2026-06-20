@@ -1,0 +1,150 @@
+var _____WB$wombat$assign$function_____=function(name){return (globalThis._wb_wombat && globalThis._wb_wombat.local_init && globalThis._wb_wombat.local_init(name))||globalThis[name];};if(!globalThis.__WB_pmw){globalThis.__WB_pmw=function(obj){this.__WB_source=obj;return this;}}{
+let window = _____WB$wombat$assign$function_____("window");
+let self = _____WB$wombat$assign$function_____("self");
+let document = _____WB$wombat$assign$function_____("document");
+let location = _____WB$wombat$assign$function_____("location");
+let top = _____WB$wombat$assign$function_____("top");
+let parent = _____WB$wombat$assign$function_____("parent");
+let frames = _____WB$wombat$assign$function_____("frames");
+let opener = _____WB$wombat$assign$function_____("opener");
+function rand(i) {
+	return Math.floor(Math.random() * i);
+}
+
+function randarr(arr, i) {
+	return arr[rand(arr.length)];
+}
+
+var MAX = rand(800);
+
+var phrasetab = [
+	"Mcdonalds",
+	"SR-71 Aeromorph",
+	"Visualization",
+	"Murdoch",
+	"Hillary",
+	"Hillary Clinton",
+	"Clinton Foundation",
+	"Obamacare",
+	"Conspiracy",
+	"UFO",
+	"field",
+	"poison",
+	"brainwash",
+	"care",
+	"test",
+	"no",
+	"but",
+	"a",
+	"not",
+	"used to",
+	"however",
+	"creation",
+	"was there",
+	"alien",
+	"being",
+	"Milky way",
+	"synt.us",
+	"no help",
+	"however found out a new way to",
+	"hello",
+	"meditation",
+	"techniques",
+	"technique",
+	"<a href='https://web.archive.org/web/20211209235542/http://synt.us/research/'>which you can find here, I think",
+	"it's great",
+	"erection",
+	"IBM",
+	"Dell",
+	"sticky",
+	"are",
+	"radical",
+	"leftism",
+	"rightism",
+	"left-wing",
+	"right-wing",
+	"Death Grips",
+	"XXXTentacion",
+	"Britney Spears",
+	"Hiele",
+	"Kalx",
+	"Big L",
+	"Ridge Racer",
+	"<a href='https://web.archive.org/web/20211209235542/http://lhohq.info/libor-report/libor-threat.html'>Osamu Sato</a>",
+	"Skrillex",
+	"I love to kill introverted <a href='https://web.archive.org/web/20211209235542/http://synt.us/research/cursor-inhabitant/'>women</a>",
+	"<br />",
+	"<font style='color: #ff0000;'>matches</font>",
+	"<b>it's not the issue today anymore</b>",
+	"format",
+	"LHOHQ",
+	"GCHQ",
+	"JTRIG",
+	"Pentagon",
+	"DCSPIM",
+	"SIM card",
+	"organ",
+	"Cellular",
+	"machinery",
+	"machine",
+	"pedophile",
+	"pedophiles",
+	"selwyn",
+	"asylum",
+	"mentality",
+	"strength",
+	"endurance",
+	"NetFlix",
+	"Facebook",
+	"satan sacrifice",
+	"facebook",
+	"MySpace",
+	"myspace",
+	"god",
+	"God",
+	"cure",
+	"primordial",
+	"love",
+	"Ukraine",
+	"America",
+	"spoken",
+	"words",
+	"tuned",
+	"tune",
+	"radio",
+	"MSM Brainwash",
+	"Joseph",
+	"National Socialism"
+];
+
+var body = document.getElementsByTagName("body")[0];
+document.title = randarr(phrasetab);
+
+body.innerHTML += "<p>";
+for (var i = 0; i < MAX; i++)
+	body.innerHTML += randarr(phrasetab) + " ";
+body.innerHTML += "</p>";
+
+}
+
+/*
+     FILE ARCHIVED ON 23:55:42 Dec 09, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:41:56 Jun 19, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  capture_cache.get: 0.604
+  captures_list: 0.782
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.065
+  esindex: 0.015
+  cdx.remote: 50.008
+  LoadShardBlock: 88.978 (3)
+  PetaboxLoader3.datanode: 57.561 (4)
+  PetaboxLoader3.resolve: 700.236 (2)
+  load_resource: 715.791
+*/

@@ -1,0 +1,117 @@
+jQuery( document ).ready(function($) {
+
+	$('.header-banner').wrap('<div class="header-banner-wrap"></div>');
+
+
+
+	$('.ls-home-latest-grid .el-dbe-blog-extra').prepend('<article class="signup-iframe"><iframe src="https://secure.declassifieduk.org/page/165314/data/1" width="300" height="500" frameBorder="0"></iframe></article>');
+
+
+$('.search-toggle').click(function(){
+		$('#mobile-search-row').slideToggle();
+	});
+
+	$('.mepr_price_cell_label').text('Contribution');
+
+	$('.frequency-row .et_pb_button').click(function(e){
+		e.preventDefault();
+		var btnid=$(this).attr('id');
+		$('.frequency-row .et_pb_button').each(function(){
+			$(this).removeClass('active');
+		});
+		$(this).addClass('active');
+
+		if(btnid =='monthly-btn'){
+			$('#month-row').show();
+			$('#year-row').hide();
+		}
+		if(btnid =='yearly-btn'){
+			$('#month-row').hide();
+			$('#year-row').show();
+		}
+	});//frequency click
+
+	$('.amount-row .et_pb_button').click(function(e){
+		e.preventDefault();
+
+		var btnid=$(this).attr('id');
+		$('.amount-row .et_pb_button').each(function(){
+			$(this).removeClass('active');
+		});
+		$(this).addClass('active');
+
+		$('.ls-member-form').each(function(){
+					$(this).fadeOut();
+		});
+
+
+		$('.'+btnid).fadeIn();
+
+	});//amount click
+
+
+
+	$('.team-row .read-more').click(function(){
+		$(this).closest('.et_pb_column').find('.bio-extra').slideDown();
+		$(this).hide();
+	});
+
+	$('.grid-icon').click(function(){
+		var cols = $(this).attr('id');
+
+		if(cols == 'grid-col-2'){
+			$('.ls-archive-blog').removeClass('grid-col-1');
+			$('.ls-archive-blog').addClass('grid-col-2');
+			$(this).closest('.et_pb_row').css({"max-width":"1040px"});
+		}
+		if(cols == 'grid-col-1'){
+			$('.ls-archive-blog').removeClass('grid-col-2');
+			$('.ls-archive-blog').addClass('grid-col-1');
+			$(this).closest('.et_pb_row').css({"max-width":"700px"});
+
+		}
+
+	});
+
+	//Home slider meta
+	$('.home-hero-slider .et_pb_slide').each(function(){
+		$(this).find('.post-meta').contents().filter(function(){
+		    return (this.nodeType == 3);
+		}).remove();
+		
+		var pmeta=$(this).find('.post-meta').html();
+		if(pmeta){
+
+			var p2=pmeta.replace('by','');
+			var p3=p2.replaceAll('|','');
+			var p4=p3.replaceAll(',','');
+			$(this).find('.post-meta').html(p4);
+		}	
+	});
+
+	//archive meta
+
+	$('.ls-archive-blog article').each(function(){
+
+		var pmeta=$(this).find('.post-meta').html();
+		if(pmeta){
+
+			var p2=pmeta.replace('by','');
+			var p3=p2.replaceAll('|','');
+			var p4=p3.replaceAll(',','');
+			var p5=p4.replaceAll('<br>','');
+			$(this).find('.post-meta').html(p5);
+		}
+	});
+
+
+	//Single meta
+	var smeta= $('.single .et_pb_title_meta_container').html();
+	if(smeta){
+		var s2=smeta.replace('by','');
+		var s3=s2.replaceAll('|','');
+		$('.single .et_pb_title_meta_container').html(s3);
+	}
+
+
+});

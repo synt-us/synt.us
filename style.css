@@ -1,0 +1,27 @@
+body {
+	background: #000;
+	background-size: cover;
+	color: #ffffea;
+	font-family: monospace;
+}
+
+a {
+	color: #ffffea;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.contact {
+	display: inline-block;
+}
+
+pre {
+	background-color: #ba0404;
+}
+
+.lhohq {
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}

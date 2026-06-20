@@ -1,0 +1,18 @@
+body {
+	color: #ffffff;
+	background-color: #000000;
+}
+
+#logo {
+	float: left;
+}
+
+#menu {
+	float: right;
+}
+
+a {
+	color: #0fffff;
+	text-decoration: none;
+	padding: 15px;
+}
